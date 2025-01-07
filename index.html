@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Questions</title>
+</head>
+<body>
+    <h1>Payroll Questionnaire</h1>
+    <form action="/submit" method="POST">
+        <label for="payrollSoftware">What payroll software are you using?</label>
+        <input type="text" name="payrollSoftware" required><br><br>
+
+        <label for="macroHeaders">What are the column headers?</label>
+        <input type="text" name="macroHeaders" required><br><br>
+
+        <label for="employeeTypes">What wage types does your payroll use?</label>
+        <input type="text" name="employeeTypes" required><br><br>
+
+        <label for="overtime">What are your overtime rules?</label>
+        <input type="text" name="overtime" required><br><br>
+
+        <label for="employeePosition">Are there specific employee positions that trigger different overtime rules?</label>
+        <input type="text" name="employeePosition" required><br><br>
+
+        <label for="employeeShifts">Are there specific employee shifts or overnight shifts that need to be handled differently?</label>
+        <input type="text" name="employeeShifts" required><br><br>
+
+        <label for="unions">Does your company have unions? If so, how are those handled?</label>
+        <input type="text" name="unions" required><br><br>
+
+        <label for="payPeriods">What are your pay periods like?</label>
+        <input type="text" name="payPeriods" required><br><br>
+
+        <label for="extraNotes">Are there any other specific payroll-related needs?</label>
+        <input type="text" name="extraNotes" required><br><br>
+
+        <label for="outputFormats">What output formats are required (e.g., Excel, PDF, CSV)?</label>
+        <input type="text" name="outputFormats" required><br><br>
+        <label for="fileNaming">Does the file exported by the macro need to be named something specific?</label><br>
+        <input type="radio" id="yes" name="fileNaming" value="yes" required>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="fileNaming" value="no">
+        <label for="no">No</label><br>
+
+        <label for="customFileName">If yes, what should the file name be?</label>
+        <input type="text" id="customFileName" name="customFileName"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
